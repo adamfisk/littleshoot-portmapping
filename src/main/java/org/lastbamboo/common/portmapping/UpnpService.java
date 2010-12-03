@@ -15,10 +15,11 @@ public interface UpnpService {
 	 * @return -1 if the mapping fails otherwise the index that identifies this
 	 *         port mapping (mappingIndex)
 	 */
-	public int addUpnpMapping(int protocolType, int localPort, int externalPortRequested);
+	int addUpnpMapping(PortMappingProtocol protocol, int localPort, 
+	    int externalPortRequested);
 
-	public void removeUpnpMapping(int mappingIndex);
+	void removeUpnpMapping(int mappingIndex);
 
-	public void addPortMapListener(PortMapListener portMapListener);
+	void addPortMapListener(PortMapListener portMapListener);
 	
 }

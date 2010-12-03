@@ -15,10 +15,11 @@ public interface NatPmpService {
 	 * @return -1 if the mapping fails otherwise the index that identifies this
 	 *         port mapping (mappingIndex)
 	 */
-	public int addNatPmpMapping(int protocolType, int localPort, int externalPortRequested);
+	int addNatPmpMapping(PortMappingProtocol protocol, int localPort, 
+	    int externalPortRequested);
 
-	public void removeNatPmpMapping(int mappingIndex);
+	void removeNatPmpMapping(int mappingIndex);
 	
-	public void addPortMapListener(PortMapListener portMapListener);
+	void addPortMapListener(PortMapListener portMapListener);
 
 }

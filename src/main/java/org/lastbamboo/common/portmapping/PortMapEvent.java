@@ -6,13 +6,14 @@ public class PortMapEvent extends EventObject {
 
     private static final long serialVersionUID = -82849585250466266L;
 
-    int mappingIndex;
-    int externalPortAllocated;
-    int type;
+    private final int mappingIndex;
+    private final int externalPortAllocated;
+    private final int type;
     
-    public PortMapEvent(Object source, int mappinIndex, int externalPortAllocated, int type) {
+    public PortMapEvent(final Object source, final int mappingIndex, 
+        final int externalPortAllocated, final int type) {
         super(source);
-        this.mappingIndex = mappinIndex;
+        this.mappingIndex = mappingIndex;
         this.externalPortAllocated = externalPortAllocated;
         this.type = type;
     }

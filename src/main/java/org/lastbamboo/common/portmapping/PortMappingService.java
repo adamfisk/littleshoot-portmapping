@@ -2,10 +2,10 @@ package org.lastbamboo.common.portmapping;
 
 public interface PortMappingService 
     {
-    public void addMapping(int protocolType, int localPort, 
+    void addMapping(PortMappingProtocol protocol, int localPort, 
         int externalPortRequested);
 
-    public void removeMapping(int mappingIndex);
+    void removeMapping(int mappingIndex);
     
-    public void addPortMapListener(PortMapListener portMapListener);
+    void addPortMapListener(PortMapListener portMapListener);
     }
