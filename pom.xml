@@ -14,6 +14,7 @@
 
     <properties>
          <slf4j.version>1.6.1</slf4j.version>
+         <ls.version>1.0-SNAPSHOT</ls.version>
     </properties>
 
     <licenses>
@@ -53,7 +54,7 @@
         <dependency>
             <groupId>org.littleshoot</groupId>
             <artifactId>util</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${ls.version}</version>
         </dependency> 
 
         <dependency>
