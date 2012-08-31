@@ -9,7 +9,8 @@ public interface UpnpService {
      * There will not be any event generated for mappings that fail with
      * a -1 return value.
      * 
-     * @param protocolType none = 0, udp = 1, tcp = 2, other than these values results in none = 0
+     * @param protocolType none = 0, udp = 1, tcp = 2, other than these values 
+     * results in none = 0
      * @param localPort the local port
      * @param externalPortRequested the external port being requested
      * @return -1 if the mapping fails otherwise the index that identifies this
@@ -21,5 +22,7 @@ public interface UpnpService {
     void removeUpnpMapping(int mappingIndex);
 
     //void addPortMapListener(PortMapListener portMapListener);
+    
+    void shutdown();
     
 }
