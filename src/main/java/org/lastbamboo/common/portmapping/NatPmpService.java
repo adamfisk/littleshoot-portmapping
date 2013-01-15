@@ -20,4 +20,6 @@ public interface NatPmpService {
 
     void removeNatPmpMapping(int mappingIndex);
     
+    void shutdown();
+    
 }
